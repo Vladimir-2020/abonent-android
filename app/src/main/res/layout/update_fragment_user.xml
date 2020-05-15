@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:id="@+id/newlastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:hint="@string/lastname"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                tools:ignore="Autofill,RtlCompat" />
+
+            <TextView
+                android:id="@+id/newmiddlename"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:hint="@string/middlename"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                tools:ignore="Autofill,RtlCompat" />
+
+            <TextView
+                android:id="@+id/newfirstname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:hint="@string/firstname"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                tools:ignore="Autofill,RtlCompat" />
+
+            <TextView
+                android:id="@+id/newstreet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:hint="@string/street"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                tools:ignore="Autofill,RtlCompat" />
+
+            <TextView
+                android:id="@+id/newbuilding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:hint="@string/building"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                tools:ignore="Autofill,RtlCompat" />
+
+            <TextView
+                android:id="@+id/newflat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:hint="@string/flat"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                tools:ignore="Autofill,RtlCompat" />
+
+            <TextView
+                android:id="@+id/newphone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:hint="@string/phone"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                tools:ignore="Autofill,RtlCompat" />
+
+            <TextView
+                android:id="@+id/newtarif"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:hint="@string/tarif"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                tools:ignore="Autofill,RtlCompat" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

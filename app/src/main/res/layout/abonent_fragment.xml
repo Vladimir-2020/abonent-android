@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:id="@+id/main_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:freezesText="true"
+                android:text="@string/new_abonent"
+                android:textSize="30sp"
+                tools:ignore="TextViewEdits" />
+
+            <EditText
+                android:id="@+id/lastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:hint="@string/lastname"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                tools:ignore="Autofill" />
+
+            <EditText
+                android:id="@+id/firstname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:hint="@string/firstname"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                tools:ignore="Autofill" />
+
+            <EditText
+                android:id="@+id/middlename"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:hint="@string/middlename"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                tools:ignore="Autofill" />
+
+            <EditText
+                android:id="@+id/street"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:hint="@string/street"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                tools:ignore="Autofill" />
+
+            <EditText
+                android:id="@+id/building"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:hint="@string/building"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                tools:ignore="Autofill" />
+
+            <EditText
+                android:id="@+id/flat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:hint="@string/flat"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                tools:ignore="Autofill" />
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:hint="@string/phone"
+                android:inputType="phone"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                tools:ignore="Autofill" />
+
+            <EditText
+                android:id="@+id/tarif"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:hint="@string/tarif"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                tools:ignore="Autofill" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="@string/add" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

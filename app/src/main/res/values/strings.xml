@@ -21,5 +21,6 @@
     <string name="password">Пароль</string>
     <string name="authorization">Авторизоваться</string>
     <string name="search">Поиск</string>
+    <string name="date">Дата регистрации</string>
     <string name="find" tools:ignore="TypographyEllipsis">Найти...</string>
 </resources>

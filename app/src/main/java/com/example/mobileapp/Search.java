@@ -1,5 +1,5 @@
 package com.example.mobileapp;
 
-public class Date {
+public class Search {
     public static String search_w = "";
 }

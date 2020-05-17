@@ -54,6 +54,7 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
 
         holder.name.setText(abonent.getLastname() + "\n"
                 + abonent.getFirstname());
+        holder.date.setText(abonent.getDate());
         holder.name.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
@@ -80,12 +81,14 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
     class ViewHolder extends RecyclerView.ViewHolder {
 
         final TextView name;
+        final TextView date;
         final Button btn_del;
 
         ViewHolder(View view) {
             super(view);
 
             name = view.findViewById(R.id.name);
+            date = view.findViewById(R.id.date);
             btn_del = view.findViewById(R.id.btn_del);
         }
     }

@@ -15,7 +15,7 @@ import com.google.firebase.database.annotations.Nullable;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.example.mobileapp.Date.search_w;
+import static com.example.mobileapp.Search.search_w;
 
 public class FireBase {
 
@@ -182,6 +182,10 @@ public class FireBase {
     }
 
     public void write(Abonent abonentForDB) {
+//        !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        RegistrationDate registrationDate= new RegistrationDate();
+        Log.d("___TEST__",registrationDate.myDate()); // выводит строку (день,месяц,год) при записи в логи, тебе надо просто в обьект писать
+//        !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         databaseReference.push().setValue(abonentForDB);
     }
 

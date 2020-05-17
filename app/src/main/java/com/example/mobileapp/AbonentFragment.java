@@ -50,7 +50,7 @@ public class AbonentFragment extends Fragment {
 
         validation.addValidation(lastname, RegexTemplate.NOT_EMPTY, "Введите фамилию");
         validation.addValidation(firsname, RegexTemplate.NOT_EMPTY, "Введите имя");
-        validation.addValidation(middlename, RegexTemplate.NOT_EMPTY,"Введите отчество");
+        validation.addValidation(middlename, RegexTemplate.NOT_EMPTY, "Введите отчество");
         validation.addValidation(street, RegexTemplate.NOT_EMPTY, "Введите название улицы/проспекта");
         validation.addValidation(building, RegexTemplate.NOT_EMPTY, "Введите номер дома");
         validation.addValidation(flat, RegexTemplate.NOT_EMPTY, "Введите номер квартиры");
@@ -63,6 +63,7 @@ public class AbonentFragment extends Fragment {
                 if (validation.validate()) {
 
                     abonent = new Abonent();
+                    RegistrationDate registrationDate = new RegistrationDate();
 
                     String last = lastname.getText().toString().trim();
                     String first = firsname.getText().toString().trim();
@@ -72,6 +73,8 @@ public class AbonentFragment extends Fragment {
                     String fl = flat.getText().toString().trim();
                     String ph = phone.getText().toString().trim();
                     String tar = tarif.getText().toString().trim();
+                    String dat = registrationDate.myDate();
+
 
                     abonent.setLastname(last);
                     abonent.setFirstname(first);
@@ -81,6 +84,8 @@ public class AbonentFragment extends Fragment {
                     abonent.setFlat(fl);
                     abonent.setPhone(ph);
                     abonent.setTarif(tar);
+                    abonent.setDate(dat);
+
 
                     fireBase = new FireBase();
                     fireBase.write(abonent);

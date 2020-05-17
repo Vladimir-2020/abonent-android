@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.mobileapp.FireBase;
 import com.example.mobileapp.R;
 
-import static com.example.mobileapp.Date.search_w;
+import static com.example.mobileapp.Search.search_w;
 
 
 public class ListAbonentFragmentUser extends Fragment {
@@ -24,13 +24,13 @@ public class ListAbonentFragmentUser extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View v = inflater.inflate(R.layout.list_abonent_fragment_user, container, false); // ???
+        View v = inflater.inflate(R.layout.list_abonent_fragment_user, container, false);
 
         RecyclerView recyclerView = v.findViewById(R.id.list);
         final EditText search = v.findViewById(R.id.search_field);
         Button btn = v.findViewById(R.id.search_btn);
 
-        final DataAdapterUser adapter = new DataAdapterUser(inflater.getContext(), fireBase.getValue()); //копия адаптера без лишних кнопок
+        final DataAdapterUser adapter = new DataAdapterUser(inflater.getContext(), fireBase.getValue());
         fireBase.readForUser(adapter);
         recyclerView.setAdapter(adapter);
 

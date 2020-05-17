@@ -11,6 +11,15 @@ public class Abonent {
     private String phone;
     private String tarif;
     private String key;
+    private String date;
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
 
     public String getLastname() {
         return lastname;
@@ -79,5 +88,7 @@ public class Abonent {
     public void setKey(String key) {
         this.key = key;
     }
+
+
 
 }

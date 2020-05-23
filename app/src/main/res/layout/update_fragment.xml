@@ -6,12 +6,13 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
 
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             tools:ignore="UselessParent">
 
@@ -23,6 +24,7 @@
                 android:hint="@string/lastname"
                 android:inputType="textPersonName"
                 android:textAlignment="center"
+                android:textSize="25sp"
                 tools:ignore="Autofill" />
 
             <EditText
@@ -33,6 +35,7 @@
                 android:hint="@string/firstname"
                 android:inputType="textPersonName"
                 android:textAlignment="center"
+                android:textSize="25sp"
                 tools:ignore="Autofill" />
 
             <EditText
@@ -43,6 +46,7 @@
                 android:hint="@string/middlename"
                 android:inputType="textPersonName"
                 android:textAlignment="center"
+                android:textSize="25sp"
                 tools:ignore="Autofill" />
 
             <EditText
@@ -53,6 +57,7 @@
                 android:hint="@string/street"
                 android:inputType="text"
                 android:textAlignment="center"
+                android:textSize="25sp"
                 tools:ignore="Autofill" />
 
             <EditText
@@ -63,6 +68,7 @@
                 android:hint="@string/building"
                 android:inputType="number"
                 android:textAlignment="center"
+                android:textSize="25sp"
                 tools:ignore="Autofill" />
 
             <EditText
@@ -73,6 +79,7 @@
                 android:hint="@string/flat"
                 android:inputType="number"
                 android:textAlignment="center"
+                android:textSize="25sp"
                 tools:ignore="Autofill" />
 
             <EditText
@@ -83,6 +90,7 @@
                 android:hint="@string/phone"
                 android:inputType="phone"
                 android:textAlignment="center"
+                android:textSize="25sp"
                 tools:ignore="Autofill" />
 
             <EditText
@@ -93,6 +101,7 @@
                 android:hint="@string/tarif"
                 android:inputType="text"
                 android:textAlignment="center"
+                android:textSize="25sp"
                 tools:ignore="Autofill" />
 
             <Button

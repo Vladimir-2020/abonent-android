@@ -62,19 +62,23 @@ public class UpdateFragment extends Fragment {
                 if (validation.validate()) {
 
                     try {
-                        final Abonent reAdonent = new Abonent();
-                        reAdonent.setLastname(newlastname.getText().toString());
-                        reAdonent.setFirstname(newfirstname.getText().toString());
-                        reAdonent.setMiddlename(newmiddlename.getText().toString());
-                        reAdonent.setStreet(newstreet.getText().toString());
-                        reAdonent.setBuilding(newbuilding.getText().toString());
-                        reAdonent.setFlat(newflat.getText().toString());
-                        reAdonent.setPhone(newphone.getText().toString());
-                        reAdonent.setTarif(newtarif.getText().toString());
-                        reAdonent.setKey(key);
+                        final Abonent reAbonent = new Abonent();
+                        RegistrationDate registrationDate = new RegistrationDate();
+                        String dat = registrationDate.myDate();
+                        reAbonent.setLastname(newlastname.getText().toString());
+                        reAbonent.setFirstname(newfirstname.getText().toString());
+                        reAbonent.setMiddlename(newmiddlename.getText().toString());
+                        reAbonent.setStreet(newstreet.getText().toString());
+                        reAbonent.setBuilding(newbuilding.getText().toString());
+                        reAbonent.setFlat(newflat.getText().toString());
+                        reAbonent.setPhone(newphone.getText().toString());
+                        reAbonent.setTarif(newtarif.getText().toString());
+                        reAbonent.setKey(key);
+                        reAbonent.setDate(dat);
+
 
                         FireBase fireBase = new FireBase();
-                        fireBase.update(reAdonent.getKey() , reAdonent);
+                        fireBase.update(reAbonent.getKey() , reAbonent);
 
                     } catch (Exception e) {
                         Log.d("_ERR", e + "");
@@ -98,5 +102,6 @@ public class UpdateFragment extends Fragment {
         newphone.setText(newAbonent.getPhone());
         newtarif.setText(newAbonent.getTarif());
         key = newAbonent.getKey();
+
     }
 }

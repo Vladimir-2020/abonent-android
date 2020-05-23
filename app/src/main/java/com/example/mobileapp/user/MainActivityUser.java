@@ -9,7 +9,7 @@ import com.example.mobileapp.FireBase;
 import com.example.mobileapp.R;
 import com.google.android.material.tabs.TabLayout;
 
-public class Main3Activity extends AppCompatActivity {
+public class MainActivityUser extends AppCompatActivity {
 
     private FireBase fireBase = new FireBase();
     public static ViewPager viewPagerUser;
@@ -17,7 +17,7 @@ public class Main3Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main3);
+        setContentView(R.layout.activity_main_user);
 
         PagerAdapterUser pagerAdapter = new PagerAdapterUser(getSupportFragmentManager());
         viewPagerUser = findViewById(R.id.view_pager);

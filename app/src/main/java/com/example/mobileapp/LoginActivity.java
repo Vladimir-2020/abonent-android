@@ -4,21 +4,20 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.example.mobileapp.user.Main3Activity;
+import com.example.mobileapp.user.MainActivityUser;
 
-public class Main2Activity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_login);
 
-        Search search = new Search(); // ничего не делает!
+        Search search = new Search();
 
         final EditText login = findViewById(R.id.login);
         final EditText pass = findViewById(R.id.password);
@@ -32,11 +31,11 @@ public class Main2Activity extends AppCompatActivity {
                 String pas = pass.getText().toString().trim();
 
                 if(log.equals("admin") & pas.equals("admin")){
-                    //типо админ активити, что сейчас
-                    Intent intent = new Intent(Main2Activity.this, MainActivity.class);
+
+                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                     startActivity(intent);
                 } else {
-                    Intent intent = new Intent(Main2Activity.this, Main3Activity.class);
+                    Intent intent = new Intent(LoginActivity.this, MainActivityUser.class);
                     startActivity(intent);
                 }
             }

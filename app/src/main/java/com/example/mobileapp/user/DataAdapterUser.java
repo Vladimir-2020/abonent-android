@@ -16,7 +16,7 @@ import com.example.mobileapp.R;
 
 import java.util.List;
 
-import static com.example.mobileapp.user.Main3Activity.viewPagerUser;
+import static com.example.mobileapp.user.MainActivityUser.viewPagerUser;
 
 public class DataAdapterUser extends RecyclerView.Adapter<DataAdapterUser.ViewHolder> {
 

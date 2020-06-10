@@ -27,7 +27,6 @@ public class ListAbonentFragment extends Fragment {
         final EditText search = v.findViewById(R.id.search_field);
         Button btn = v.findViewById(R.id.search_btn);
 
-
         final DataAdapter adapter = new DataAdapter(inflater.getContext(), fireBase.getValue());
         fireBase.read(adapter);
         recyclerView.setAdapter(adapter);
@@ -39,9 +38,6 @@ public class ListAbonentFragment extends Fragment {
             }
         });
 
-
-
         return v;
-}
-
+    }
 }

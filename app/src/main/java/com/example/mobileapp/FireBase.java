@@ -64,7 +64,6 @@ public class FireBase {
         } catch (Exception e) {
             Log.e("Error", e.toString());
         }
-
     }
 
     public void readForUser(final DataAdapterUser adapter) {
@@ -182,10 +181,9 @@ public class FireBase {
     }
 
     public void write(Abonent abonentForDB) {
-//        !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
         RegistrationDate registrationDate= new RegistrationDate();
-        Log.d("___TEST__",registrationDate.myDate()); // выводит строку (день,месяц,год) при записи в логи, тебе надо просто в обьект писать
-//        !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
         databaseReference.push().setValue(abonentForDB);
     }
 

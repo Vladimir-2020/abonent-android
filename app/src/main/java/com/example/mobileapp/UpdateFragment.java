@@ -76,7 +76,6 @@ public class UpdateFragment extends Fragment {
                         reAbonent.setKey(key);
                         reAbonent.setDate(dat);
 
-
                         FireBase fireBase = new FireBase();
                         fireBase.update(reAbonent.getKey() , reAbonent);
 
@@ -85,7 +84,6 @@ public class UpdateFragment extends Fragment {
                     }
                     viewPager.setCurrentItem(1);
                 }
-
             }
         });
         return v;
@@ -102,6 +100,5 @@ public class UpdateFragment extends Fragment {
         newphone.setText(newAbonent.getPhone());
         newtarif.setText(newAbonent.getTarif());
         key = newAbonent.getKey();
-
     }
 }

@@ -28,23 +28,23 @@
                 tools:ignore="Autofill,RtlCompat" />
 
             <TextView
-                android:id="@+id/newmiddlename"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:gravity="center_vertical"
-                android:hint="@string/middlename"
-                android:textAlignment="center"
-                android:textSize="25sp"
-                tools:ignore="Autofill,RtlCompat" />
-
-            <TextView
                 android:id="@+id/newfirstname"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:gravity="center_vertical"
                 android:hint="@string/firstname"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                tools:ignore="Autofill,RtlCompat" />
+
+            <TextView
+                android:id="@+id/newmiddlename"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:hint="@string/middlename"
                 android:textAlignment="center"
                 android:textSize="25sp"
                 tools:ignore="Autofill,RtlCompat" />

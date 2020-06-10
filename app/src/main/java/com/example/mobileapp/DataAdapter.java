@@ -35,8 +35,6 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
         notifyDataSetChanged();
     }
 
-
-
     @NonNull
     @Override
     public DataAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -71,7 +69,6 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
             }
         });
     }
-
 
     @Override
     public int getItemCount() {

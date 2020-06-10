@@ -17,8 +17,6 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        Search search = new Search();
-
         final EditText login = findViewById(R.id.login);
         final EditText pass = findViewById(R.id.password);
 
@@ -40,8 +38,5 @@ public class LoginActivity extends AppCompatActivity {
                 }
             }
         });
-
     }
-
-
 }
